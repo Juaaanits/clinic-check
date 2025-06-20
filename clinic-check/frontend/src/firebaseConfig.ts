@@ -1,9 +1,8 @@
-// clinic-check/frontend/src/firebaseConfig.ts
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getFirestore, collection, addDoc, getDocs, serverTimestamp, FieldValue } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, serverTimestamp } from "firebase/firestore";
 
-// Your Firebase configuration from your Firebase project settings
+// My Firebase configuration from the Firebase project settings
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -13,7 +12,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 // Get service instances and export them for use in other parts of your app
